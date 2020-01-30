@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="CarMaintenance.LoginPage"  
+             Title="LoginPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="SignUp" Clicked="SigUpButtonClicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="User Name or Email ID"/>
+            <Entry x:Name="UserNameEntry" Placeholder="UserName"/>
+            <Label Text="Password"/>
+            <Entry x:Name="PasswordEntry" IsPassword="True"/>
+            <Button Text="Click to Login" Clicked="Login_Clicked"/>
+            <Label x:Name="LoginFaild"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>  
